@@ -178,7 +178,6 @@ CSV files of various types.
           <printSummary>true</printSummary>
           <excludes>
             <exclude>**/perf/PerformanceTest.java</exclude>
-            <exclude>**/perf/Lexer.java</exclude>
           </excludes>
         </configuration>
       </plugin>
@@ -201,6 +200,7 @@ CSV files of various types.
         <version>${commons.rat.version}</version>
         <!-- Should agree with config in reporting section -->
         <configuration>
+          <skip>true</skip>
           <excludes>
             <exclude>src/test/resources/CSVFileParser/bom.csv</exclude>
             <exclude>src/test/resources/CSVFileParser/test.csv</exclude>
