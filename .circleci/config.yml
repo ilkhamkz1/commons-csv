@@ -31,9 +31,8 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
       
-      - run: mvn install:install-file -Dfile=/home/circleci/repo/src/csv-1.0.jar -DgroupId=org.skife.kasparov -DartifactId=csv -Dversion=1.0 -Dpackaging=jar
-      
       - run: |
+             mvn install:install-file -Dfile=/home/circleci/repo/src/csv-1.0.jar -DgroupId=org.skife.kasparov -DartifactId=csv -Dversion=1.0 -Dpackaging=jar
              mkdir -p ~/repo/CIRCLE_TEST_REPORTS/junit/
              mvn test -Pbenchmark -Dbenchmark=foo
     
@@ -42,7 +41,7 @@ jobs:
             - ~/.m2
           key: v1-dependencies-{{ checksum "build.gradle" }}
         
- - store_artifacts:
+      - store_artifacts:
           path: ~/repo/CIRCLE_TEST_REPORTS/junit
           destination: prefix
 
