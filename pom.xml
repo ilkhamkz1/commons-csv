@@ -314,6 +314,7 @@ CSV files of various types.
         <version>${commons.rat.version}</version>
         <!-- Should agree with config in build section -->
         <configuration>
+          <skip>true</skip>
           <excludes>
             <exclude>src/test/resources/CSVFileParser/bom.csv</exclude>
             <exclude>src/test/resources/CSVFileParser/test.csv</exclude>
