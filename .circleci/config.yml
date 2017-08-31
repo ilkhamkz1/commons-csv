@@ -23,14 +23,16 @@ jobs:
     
     steps:
       - checkout
-
+      
       # Download and cache dependencies
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "build.gradle" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
-
+      
+      - run: mvn install:install-file -Dfile=~/repo/src/csv-1.0.jar -DgroupId=org.skife.kasparov -DartifactId=csv -Dversion=1.0 -Dpackaging=jar
+      
       - run: mvn test -Pbenchmark -Dbenchmark=foo
     
       - save_cache:
