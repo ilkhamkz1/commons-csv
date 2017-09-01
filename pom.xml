@@ -182,6 +182,7 @@ CSV files of various types.
             <exclude>**/LexerTest.java</exclude>       
             <exclude>**/CSVFormatPredefinedTest.java</exclude>   
             <exclude>**/CSVFormatTest.java</exclude>
+            <exclude>**/CSVRecordTest</exclude>               
           </excludes>
         </configuration>
       </plugin>
