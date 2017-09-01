@@ -176,6 +176,7 @@ CSV files of various types.
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <printSummary>true</printSummary>
+          <argLine>-Xmx1024M</argLine>
           <excludes>
             <exclude>**/perf/PerformanceTest.java</exclude>
             <exclude>**/LexerTest.java</exclude>       
