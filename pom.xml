@@ -180,6 +180,7 @@ CSV files of various types.
             <exclude>**/perf/PerformanceTest.java</exclude>
             <exclude>**/LexerTest.java</exclude>       
             <exclude>**/CSVFormatPredefinedTest.java</exclude>   
+            <exclude>**/CSVFormatTest.java</exclude>
           </excludes>
         </configuration>
       </plugin>
