@@ -184,7 +184,8 @@ CSV files of various types.
             <exclude>**/CSVFormatTest.java</exclude>
             <exclude>**/CSVRecordTest.java</exclude>
             <exclude>**/CSVPrinterTest.java</exclude>
-            <exclude>**/CSVParserTest.java</exclude>            
+            <exclude>**/CSVParserTest.java</exclude>  
+            <exclude>**/CSVFileParserTest.java</exclude>               
           </excludes>
         </configuration>
       </plugin>
