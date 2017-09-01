@@ -178,7 +178,8 @@ CSV files of various types.
           <printSummary>true</printSummary>
           <excludes>
             <exclude>**/perf/PerformanceTest.java</exclude>
-            <exclude>**/LexerTest.java</exclude>            
+            <exclude>**/LexerTest.java</exclude>       
+            <exclude>**/CSVFormatPredefinedTest.java</exclude>   
           </excludes>
         </configuration>
       </plugin>
