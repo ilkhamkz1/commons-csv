@@ -20,6 +20,9 @@ jobs:
       # Customize the JVM maximum heap limit
       JVM_OPTS: -Xmx3200m
       TERM: dumb
+  test:
+   override:
+    - mvn clean package
     
     steps:
       - checkout
