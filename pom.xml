@@ -178,10 +178,10 @@ CSV files of various types.
           <printSummary>true</printSummary>
           <argLine>-Xmx1024M</argLine>
           <excludes>
-            <!-- exclude>**/perf/PerformanceTest.java</exclude -->
+            <exclude>**/perf/PerformanceTest.java</exclude>
             <exclude>**/LexerTest.java</exclude>       
             <exclude>**/CSVFormatPredefinedTest.java</exclude>   
-            <exclude>**/CSVFormatTest.java</exclude>
+            <!-- exclude>**/CSVFormatTest.java</exclude -->
             <exclude>**/CSVRecordTest.java</exclude>
             <exclude>**/CSVPrinterTest.java</exclude>
             <exclude>**/CSVParserTest.java</exclude>  
