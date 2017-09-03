@@ -35,8 +35,9 @@ jobs:
              mvn install:install-file -Dfile=/home/circleci/repo/src/csv-1.0.jar -DgroupId=org.skife.kasparov -DartifactId=csv -Dversion=1.0 -Dpackaging=jar
              mkdir -p ~/repo/CIRCLE_TEST_REPORTS/junit/
              #mvnDebug -DforkCount=0 test
-             mvn -X clean verify
-             #mvn test -Pbenchmark -Dbenchmark=foo
+             #mvn -X clean verify
+             mvn test -Pbenchmark 
+             #-Dbenchmark=foo
     
       - save_cache:
           paths:
